@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.casio{
+  border:2px black solid;
+  width: 20rem;
+  height: 28.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2%;
+}
+.formulaScreen,.outputScreen{
+  display: flex;
+  justify-content:right;
+  padding: 3px;
+  height: 25px;
+}
+.formulaScreen{
+  color: rgb(0, 1, 87);
+  font-size: 1.5rem;
+}
+.outputScreen{
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+.button-container{
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3px;
+}
+button {
+  font-size: 1.5em;
+  padding: 20px;
+  cursor: pointer;
+  color:chartreuse;
+  background-color: black;
+}
+#zero,#ac {
+  grid-column: span 2;
+}
+#equal{
+  grid-row: span 2;
+}
